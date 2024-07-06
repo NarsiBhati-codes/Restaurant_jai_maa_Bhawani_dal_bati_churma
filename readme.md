@@ -23,4 +23,4 @@ This project is a responsive website designed for Jai Maa Bhawani Dal Bati Churm
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/restaurant-website.git
+   git clone https://github.com/NarsiBhatii/Restaurant_jai_maa_Bhawani_dal_bati_churma.git
