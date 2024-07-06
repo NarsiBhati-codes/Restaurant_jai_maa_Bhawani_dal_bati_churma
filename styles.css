@@ -1,0 +1,391 @@
+/* Common font family for body, headings, and call-to-action buttons */
+.cta-button,
+body,
+h1,
+h2 {
+    font-family: "Baskervville SC", serif;
+}
+
+/* Add box-shadow to various sections for a subtle elevation effect */
+.left-panel,
+.menu-section,
+.right-panel,
+.welcome-section {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style and font-weight for headings and call-to-action buttons */
+.cta-button,
+h1,
+h2 {
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Base body styles */
+body {
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hover effects for call-to-action buttons and small items */
+.cta-button:hover,
+.small-item:hover {
+    transform: scale(1.05);
+}
+
+/* Center-align text for various elements */
+.description,
+.footer-content,
+.menu-title,
+.order-section,
+.site-footer,
+header,
+section {
+    text-align: center;
+}
+
+/* Header styles */
+header {
+    font-size: 24px;
+    color: #fff;
+    background-color: #f21616;
+    padding: 5px;
+    border: 3px solid;
+    border-radius: 10px;
+}
+header div {
+    padding: 5px;
+    border: 5px solid #fff;
+    border-radius: 10px;
+}
+
+/* General section styles */
+section {
+    padding: 20px;
+    min-height: 60vh;
+    overflow-x: hidden;
+}
+
+/* Welcome section specific styles */
+.welcome-section {
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+}
+.welcome-title {
+    font-size: 45px;
+    margin-top: 0;
+}
+.welcome-content {
+    flex: 1;
+    padding: 15px;
+}
+.welcome-content p {
+    font-size: 25px;
+    line-height: 1.6;
+    color: #666;
+}
+.order-image,
+.welcome-image {
+    flex: 1;
+    text-align: center;
+}
+.welcome-image img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    border: 5px solid gold;
+    border-radius: 70px 0;
+}
+
+/* Styles for call-to-action buttons container */
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #f21616;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.cta-button svg {
+    margin-right: 10px;
+}
+.cta-button:hover {
+    background-color: #c11313;
+}
+
+/* Menu section styles */
+.menu-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #f5f5f5;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px 20px;
+    border-radius: 8px;
+}
+.menu-title {
+    font-size: 45px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.left-panel,
+.right-panel {
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    border-radius: 8px;
+}
+.menu-content {
+    display: flex;
+    width: 80%;
+}
+.left-panel {
+    width: 40%;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f8f8f8;
+}
+.right-panel {
+    width: 60%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Small item styles */
+.small-items {
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: center;
+}
+.small-item {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.small-photo {
+    width: 100%;
+    height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.big-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.big-photo {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+    transition: opacity 0.3s ease-in-out;
+}
+.description {
+    margin-top: 30px;
+    color: #666;
+}
+.dish-name {
+    font-size: 35px;
+    color: #000;
+}
+.price {
+    font-size: 20px;
+    color: #40de45;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+/* Order section styles */
+.order-section {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.order-content {
+    flex: 1;
+    text-align: left;
+    padding-left: 20px;
+}
+.location-title,
+.order-title {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+.order-content p {
+    font-size: 21px;
+    color: #666;
+}
+.order-button {
+    width: 260px;
+    font-size: 17px;
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4caf50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+.order-button:hover {
+    background-color: #45a049;
+}
+.delivery-image {
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Location section styles */
+.location-section {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.location-content {
+    flex: 1;
+    text-align: left;
+    height: 80%;
+    padding-right: 20px;
+}
+.name-location {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.location-address {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.location-map {
+    flex: 1;
+}
+.location-map iframe {
+    width: 100%;
+    height: 60vh;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styles */
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    bottom: 0;
+    overflow-x: hidden;
+}
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .location-content,
+    .order-content,
+    .welcome-content,
+    .welcome-title {
+        text-align: center;
+    }
+    header {
+        font-size: 18px;
+    }
+    .location-title,
+    .order-title,
+    .welcome-title {
+        font-size: 35px;
+    }
+    .welcome-section {
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+    }
+    .welcome-content {
+        padding: 10px;
+    }
+    .welcome-content p {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+    .order-button,
+    .welcome-image {
+        margin-top: 20px;
+    }
+    .cta-buttons {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .cta-button {
+        margin: 5px;
+        width: 80%;
+    }
+    .location-section,
+    .order-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .order-content {
+        padding-left: 0;
+    }
+    .location-content {
+        padding-right: 0;
+    }
+    .location-map iframe {
+        height: 50vh;
+    }
+    .menu-section {
+        padding: 20px;
+    }
+    .menu-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-panel,
+    .right-panel {
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 25px;
+    }
+}
