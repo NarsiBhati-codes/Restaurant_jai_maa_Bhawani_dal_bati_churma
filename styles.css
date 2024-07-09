@@ -148,6 +148,13 @@ section {
     margin-top: 0;
     margin-bottom: 20px;
 }
+.menu-instructions {
+    font-size: 17px;         
+    color: gray;             
+    text-align: center;       
+    margin-top: 10px;         
+    margin-bottom: 10px;      
+}
 .left-panel,
 .right-panel {
     padding: 20px;
