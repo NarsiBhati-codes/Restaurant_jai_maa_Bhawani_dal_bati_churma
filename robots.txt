@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+Disallow: /cdn/
+Disallow: /private/
+Disallow: /admin/
+Disallow: /cgi-bin/
+
+Sitemap: https://www.jaimaabhawanidalbatichurma.in/sitemap.xml
+
+# Crawl-delay: 10
+
+User-agent: Googlebot
+Allow: /*.js
+Allow: /*.css
+
+User-agent: Googlebot-Image
+Allow: /images/
+
+User-agent: Adsbot-Google
+Allow: /
